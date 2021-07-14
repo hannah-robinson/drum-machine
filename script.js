@@ -57,7 +57,18 @@ $(function(){
     }
 
     let drumPad = drumPadDetails.find(pad => pad.id === audioID);
+   
+    // Update UI
+    $("#display")
+      .removeClass("border-popsicle border-sunshine border-smurf border-peach border-violet-sky border-bubble-gum border-leaf border-lagoon border-sea")
+      .addClass(`border-${drumPad.border}`)
+      .text(drumPad.display)
+    $(`#${drumPad.id}`).trigger("play");
   }
+  
+  // Event listeners
+  $(".drum-pad").click(drumBeatHandler);
+  $(document).keypress(drumBeatHandler);
 }); 
 
 
