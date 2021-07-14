@@ -1,5 +1,5 @@
 $(function(){
-
+ // Properties that will change based on user interaction
   const drumPadDetails = [
     {
       id: "Q",
@@ -46,6 +46,18 @@ $(function(){
       display: "Snare"
     }
   ]
+ 
+  const drumBeatHandler = (e) => {
+    // Get data for user-selected drum pad, based either on user clicks or key strokes
+    let audioID = "";
+    if(e.key == undefined) {
+      audioID = e.target.innerText;
+    } else {
+      audioID = e.key.toUpperCase();
+    }
+
+    let drumPad = drumPadDetails.find(pad => pad.id === audioID);
+  }
 }); 
 
 
