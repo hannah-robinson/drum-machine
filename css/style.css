@@ -6550,5 +6550,8 @@ progress {
     --bs-gutter-y: 3rem;
   }
 }
+::selection {
+  background-color: #FFD64D;
+}
 
 /*# sourceMappingURL=style.css.map */
