@@ -27,7 +27,7 @@
   --bs-peach: #FFA384;
   --bs-violet-sky: #8c5ae9;
   --bs-bubble-gum: #FA6775;
-  --bs-leaf: #9BC01C;
+  --bs-leaf: #b1db27;
   --bs-lagoon: #20c997;
   --bs-sea: #72ecfa;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -736,7 +736,7 @@ progress {
 }
 
 .border-leaf {
-  border-color: #9BC01C !important;
+  border-color: #b1db27 !important;
 }
 
 .border-lagoon {
@@ -1601,7 +1601,7 @@ progress {
 }
 
 .text-leaf {
-  color: #9BC01C !important;
+  color: #b1db27 !important;
 }
 
 .text-lagoon {
@@ -1693,7 +1693,7 @@ progress {
 }
 
 .bg-leaf {
-  background-color: #9BC01C !important;
+  background-color: #b1db27 !important;
 }
 
 .bg-lagoon {
