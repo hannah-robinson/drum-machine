@@ -1,66 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta property="og:title" content="Drum Machine"/>
-  <meta property="og:image" content="//XXX"/>
-  <meta property="og:description" content= "A drum machine built with jQuery, Bootstrap 5 and Sass/SCSS as a project for freeCodeCamp's Front End Libraries certification"/>
-  <meta property="og:url" content="//XXX/"/>
-  <link rel="apple-touch-icon" href="//XXX/logo192.png" />
-  <title>Drum Machine</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header>
-    <h1 class=" mt-4 display-1 text-center">Drum Machine</h1>
-  </header>
-  <main id="drum-machine" class="container">
-    <div id="display" class="container mb-4 mt-4">
-      <div class="row gy-2 gx-3">
-        <div class="col">
-          <div class="border border-violet-sky border-3 text-center py-2 h2">Type one of the letters below</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:title" content="Drum Machine" />
+    <meta property="og:image" content="//XXX" />
+    <meta
+      property="og:description"
+      content="A drum machine built with jQuery, Bootstrap 5 and Sass/SCSS as a project for freeCodeCamp's Front End Libraries certification"
+    />
+    <meta property="og:url" content="//XXX/" />
+    <link rel="apple-touch-icon" href="//XXX/logo192.png" />
+    <title>Drum Machine</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="mt-4 display-1 text-center">Drum Machine</h1>
+    </header>
+    <main id="drum-machine" class="container">
+      <div class="container mb-4 mt-4">
+        <div class="row gy-2 gx-3">
+          <div class="col">
+            <div
+              id="display"
+              class="border border-violet-sky border-3 text-center py-2 h2"
+            >
+              Type one of the letters below
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="row gy-2 gx-3 row-cols-3">
-        <div class="col">
-          <div class="drum-pad bg-popsicle text-center py-4 h2">Q</div>
-        </div>
-        <div class="col">
-          <div class="drum-pad bg-sunshine text-center py-4 h2">W</div>
-        </div>
-        <div class="col">
-          <div class="drum-pad bg-sea text-center py-4 h2">E</div>
-        </div>
-        <div class="col">
-          <div class="drum-pad bg-smurf text-center py-4 h2">A</div>
-        </div>
-        <div class="col">
-          <div class="drum-pad bg-leaf text-center py-4 h2">S</div>
-        </div>
-        <div class="col">
-          <div class="drum-pad bg-peach text-center py-4 h2">D</div>
-        </div>
-        <div class="col">
-          <div class="drum-pad bg-lagoon text-center py-4 h2">Z</div>
-        </div>
-        <div class="col">
-          <div class="drum-pad bg-bubble-gum text-center py-4 h2">X</div>
-        </div>
-        <div class="col">
-          <div class="drum-pad bg-violet-sky text-center py-4 h2">C</div>
+      <div class="container">
+        <div class="row gy-2 gx-3 row-cols-3">
+          <div class="col">
+            <div id="clap" class="drum-pad bg-popsicle text-center py-4 h2">
+              <audio
+                id="Q"
+                class="clip"
+                src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3"
+              ></audio>
+              Q
+            </div>
+          </div>
+          <div class="col">
+            <div
+              id="open-high-hat"
+              class="drum-pad bg-sunshine text-center py-4 h2"
+            >
+              <audio
+                id="W"
+                class="clip"
+                src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"
+              ></audio>
+              W
+            </div>
+          </div>
+          <div class="col">
+            <div id="kick" class="drum-pad bg-sea text-center py-4 h2">
+              <audio
+                id="E"
+                class="clip"
+                src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"
+              ></audio>
+              E
+            </div>
+          </div>
+          <div class="col">
+            <div
+              id="closed-high-hat"
+              class="drum-pad bg-smurf text-center py-4 h2"
+            >
+              <audio
+                id="A"
+                class="clip"
+                src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"
+              ></audio>
+              A
+            </div>
+          </div>
+          <div class="col">
+            <div class="drum-pad bg-leaf text-center py-4 h2">S</div>
+          </div>
+          <div class="col">
+            <div id="shaker" class="drum-pad bg-peach text-center py-4 h2">
+              <audio
+                id="D"
+                class="clip"
+                src="https://s3.amazonaws.com/freecodecamp/drums/Give_us_a_light.mp3"
+              ></audio>
+              D
+            </div>
+          </div>
+          <div class="col">
+            <div
+              id="punchy-kick"
+              class="drum-pad bg-lagoon text-center py-4 h2"
+            >
+              <audio
+                id="Z"
+                class="clip"
+                src="https://s3.amazonaws.com/freecodecamp/drums/punchy_kick_1.mp3"
+              ></audio>
+              Z
+            </div>
+          </div>
+          <div class="col">
+            <div
+              id="side-stick"
+              class="drum-pad bg-bubble-gum text-center py-4 h2"
+            >
+              <audio
+                id="X"
+                class="clip"
+                src="https://s3.amazonaws.com/freecodecamp/drums/side_stick_1.mp3"
+              ></audio>
+              X
+            </div>
+          </div>
+          <div class="col">
+            <div id="snare" class="drum-pad bg-violet-sky text-center py-4 h2">
+              <audio
+                id="C"
+                class="clip"
+                src="https://s3.amazonaws.com/freecodecamp/drums/Brk_Snr.mp3"
+              ></audio>
+              C
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <!-- Script -->
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="script.js"></script>
-</body>
+    <!-- Script -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
