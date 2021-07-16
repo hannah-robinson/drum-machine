@@ -23,6 +23,15 @@ $custom-colors: (
 // Merge the maps
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
+// Reduce growth of container on larger screens
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 720px,
+  xl: 720px,
+  xxl: 1140px
+);
+
 // Optional Bootstrap components
 @import "../node_modules/bootstrap/scss/root";
 @import "../node_modules/bootstrap/scss/reboot";
@@ -35,4 +44,9 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 // Additional custom scss
 ::selection {
   background-color: #FFD64D;
+}
+
+.centre {
+  display: grid;
+  place-items: center;
 }
