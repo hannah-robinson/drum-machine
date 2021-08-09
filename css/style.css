@@ -21,12 +21,12 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-popsicle: #F52549;
-  --bs-sunshine: #FFD64D;
-  --bs-smurf: #008DCB;
-  --bs-peach: #FFA384;
+  --bs-popsicle: #f52549;
+  --bs-sunshine: #ffd64d;
+  --bs-smurf: #008dcb;
+  --bs-peach: #ffa384;
   --bs-violet-sky: #8c5ae9;
-  --bs-bubble-gum: #FA6775;
+  --bs-bubble-gum: #fa6775;
   --bs-leaf: #b1db27;
   --bs-lagoon: #20c997;
   --bs-sea: #72ecfa;
@@ -712,19 +712,19 @@ progress {
 }
 
 .border-popsicle {
-  border-color: #F52549 !important;
+  border-color: #f52549 !important;
 }
 
 .border-sunshine {
-  border-color: #FFD64D !important;
+  border-color: #ffd64d !important;
 }
 
 .border-smurf {
-  border-color: #008DCB !important;
+  border-color: #008dcb !important;
 }
 
 .border-peach {
-  border-color: #FFA384 !important;
+  border-color: #ffa384 !important;
 }
 
 .border-violet-sky {
@@ -732,7 +732,7 @@ progress {
 }
 
 .border-bubble-gum {
-  border-color: #FA6775 !important;
+  border-color: #fa6775 !important;
 }
 
 .border-leaf {
@@ -1577,19 +1577,19 @@ progress {
 }
 
 .text-popsicle {
-  color: #F52549 !important;
+  color: #f52549 !important;
 }
 
 .text-sunshine {
-  color: #FFD64D !important;
+  color: #ffd64d !important;
 }
 
 .text-smurf {
-  color: #008DCB !important;
+  color: #008dcb !important;
 }
 
 .text-peach {
-  color: #FFA384 !important;
+  color: #ffa384 !important;
 }
 
 .text-violet-sky {
@@ -1597,7 +1597,7 @@ progress {
 }
 
 .text-bubble-gum {
-  color: #FA6775 !important;
+  color: #fa6775 !important;
 }
 
 .text-leaf {
@@ -1669,19 +1669,19 @@ progress {
 }
 
 .bg-popsicle {
-  background-color: #F52549 !important;
+  background-color: #f52549 !important;
 }
 
 .bg-sunshine {
-  background-color: #FFD64D !important;
+  background-color: #ffd64d !important;
 }
 
 .bg-smurf {
-  background-color: #008DCB !important;
+  background-color: #008dcb !important;
 }
 
 .bg-peach {
-  background-color: #FFA384 !important;
+  background-color: #ffa384 !important;
 }
 
 .bg-violet-sky {
@@ -1689,7 +1689,7 @@ progress {
 }
 
 .bg-bubble-gum {
-  background-color: #FA6775 !important;
+  background-color: #fa6775 !important;
 }
 
 .bg-leaf {
@@ -6551,12 +6551,13 @@ progress {
   }
 }
 ::selection {
-  background-color: #FFD64D;
+  background-color: #ffd64d;
 }
 
-.centre {
-  display: grid;
-  place-items: center;
+.drum-pad:hover,
+.drum-pad--selected {
+  filter: brightness(110%);
+  transform: scale(1.03);
 }
 
 /*# sourceMappingURL=style.css.map */
