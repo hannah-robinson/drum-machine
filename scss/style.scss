@@ -46,8 +46,7 @@ $container-max-widths: (
   background-color: #ffd64d;
 }
 
-.drum-pad:hover,
-.drum-pad--selected {
+.drum-pad:hover {
   filter: brightness(110%);
   transform: scale(1.03);
 }
